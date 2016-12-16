@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="68dp"
+    tools:context="alterationstudio.dompetku.DashboardFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Saldo kamu hari ini"
+        android:id="@+id/saldoKamuText"
+        android:layout_above="@+id/saldo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="37dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Rp1.000.000.000"
+        android:textSize="30sp"
+        android:id="@+id/saldo"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hai"
+        android:id="@+id/greetingText"
+        android:layout_marginBottom="29dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_above="@+id/saldoKamuText"
+        android:layout_alignLeft="@+id/saldoKamuText"
+        android:layout_alignStart="@+id/saldoKamuText" />
+
+
+</RelativeLayout>

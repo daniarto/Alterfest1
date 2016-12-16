@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="68dp"
+    tools:context="alterationstudio.dompetku.TransaksiFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/etnominalTransaksi"
+        android:hint="Rp"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:id="@+id/kategoriSelect"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/etnominalTransaksi"
+        android:layout_alignLeft="@+id/etnominalTransaksi"
+        android:layout_alignStart="@+id/etnominalTransaksi"
+        android:layout_marginTop="19dp"
+        android:layout_alignRight="@+id/etnominalTransaksi"
+        android:layout_alignEnd="@+id/etnominalTransaksi" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:hint="Catatan"
+        android:layout_height="wrap_content"
+        android:id="@+id/catatanText"
+        android:layout_below="@+id/kategoriSelect"
+        android:layout_alignLeft="@+id/kategoriSelect"
+        android:layout_alignStart="@+id/kategoriSelect"
+        android:layout_marginTop="16dp"
+        android:layout_alignRight="@+id/kategoriSelect"
+        android:layout_alignEnd="@+id/kategoriSelect" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/etTanggalTransaksi"
+        android:hint="Tanggal"
+        android:editable="false"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:clickable="true"
+        android:layout_below="@+id/catatanText"
+        android:layout_alignLeft="@+id/catatanText"
+        android:layout_alignStart="@+id/catatanText"
+        android:layout_marginTop="26dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELESAI"
+        android:background="#f7b204"
+        android:textColor="#FFFFFF"
+        android:id="@+id/postingBtn"
+        android:layout_below="@+id/etTanggalTransaksi"
+        android:layout_marginTop="75dp"
+        android:layout_alignLeft="@+id/etTanggalTransaksi"
+        android:layout_alignStart="@+id/etTanggalTransaksi"
+        android:layout_alignRight="@+id/etTanggalTransaksi"
+        android:layout_alignEnd="@+id/etTanggalTransaksi" />
+
+
+</RelativeLayout>
